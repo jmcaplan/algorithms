@@ -1,0 +1,19 @@
+Assignment RecurrencesDrill1 [CaplanJason]: 10/10
+
+i like your annotation of the code snippets :-)
+
+very good work!
+
+Pulled files on Tue Feb  2 10:12:38 EST 2021
+Latest commit of student files ....
+Latest commit of DesignAndAnalysis/assignments/RecurrencesDrill1/RecurrencesDrill1.pdf was on: Mon Feb 1 18:02:38 2021
+7.1.1 (Give a recurrence formula T(n) for the running time of f()) -- 3pts
+
+
+7.1.2 (Give a recurrence W(n) that models the returned integer output of f(n)) -- 3 pts
+
+8.1.1 (recurrence formulas for the worst-case performance of P(k) (populate()) -- 3 pts 
+
+8.1.2 (recurrence formulas for the worst-case performance of T(n) (test). Your formulation for T(n) must include P() by “reference”) -- 1pts
+
+

@@ -1,0 +1,15 @@
+Assignment GreedyDrill [CaplanJason]: 10/10
+
+very good work!
+
+Pulled files on Mon Mar 22 10:17:30 EDT 2021
+Latest commit of student files ....
+Latest commit of DesignAndAnalysis/assignments/GreedyDrill/GreedyDrill.pdf was on: Thu Mar 18 13:35:52 2021
+1) A (only one!) paragraph explanation of how your greedy algorithm
+breaks through the O(nlogn) limit of the classic fractional knapsack
+algorithm.
+
+2) A pseudo-code description of your algorithm.
+
+3) A (only one paragraph!) proof of both correctness and performance.
+

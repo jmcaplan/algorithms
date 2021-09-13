@@ -1,0 +1,434 @@
+Assignment MergeAnInterval [CaplanJason]: 8/10
+Pulled files on Thu Nov 12 10:18:23 EST 2020
+Latest commit of student files ....
+Grade for assignment [CaplanJason]: /10
+Pulled files on Thu Nov 12 10:22:50 EST 2020
+Latest commit of student files ....
+Latest commit of src/main/java/edu/yu/introtoalgs/MergeAnInterval.java was on: Thu Nov 5 13:26:21 2020
+
+take #2
+
+Much better!  Restoring 2 points
+
+take #1
+
+
+Yair -- let me know if you want to discuss strategy to fix going forward.
+
+Deducting for basic correctness and performance failures.
+
+
+
+Note: my test suite included 3 types of tests.  (1) performance tests to
+determine whether your implementation produced O(n log n) (or better), (2)
+correctness tests to determine whether you implemented the required semantics
+and (3) "do you write good-quality code" with respect to dealing with invalid
+input.  I weight (3) very lightly because software engineering is not the focus
+of this course.
+
+The assignment was primarily about (1) because this course is about
+"Introduction to Algorithms".  I only put (2) in the test suite because there
+is no point in getting good performance that's incorrect, so even if IMHO these
+skills belong in Data Structures, I need to validate your work with respect to
+this dimension as well.  However: if you failed the tests in (2), you WILL
+AUTOMATICALLY FAIL THE PERFORMANCE TESTS as well because they assert that your
+code is behaving correctly.  I have no way to test performance independently of
+correctness, and therefore gave you a grade that reflects "did poorly on the
+assignment".
+
+The performance tests were based on the Sedgewick "doubling ratio" concepts
+that we've discussed in lecture.  Because of possible non-algorithm vagaries
+(also discussed in lecture), and because linearithmic is hard to pin down, I
+erred on the side of generosity and allowed a "fudge factor" of "ok if ratio is
+<= 3.3" for the "n disjoint intervals.  I used a "fudge factor" of "ok if ratio
+is <= 3.5" for the "n NON-disjoint intervals" test.  I "shuffled" the input to
+ensure a naive iteration through the input wouldn't produce the correct output.
+
+building Student CaplanJason assignment code base from directory /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/MergeAnInterval
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Copying Professor's JUnit source files in /Users/avraham/YUTeaching/IntroToAlgorithms/assignments/MergeAnInterval/src/test to Student CaplanJason directory tree in /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/MergeAnInterval/src
+executing Professor's test code against Student CaplanJason code
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+[ERROR] Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Test cases to execute : 1
+Execution Started : vanillaTest
+[INFO ] 2020-11-12 10:22:54.405 [main] ProfessorMergeAnIntervalTest vanillaTest - merging [1,8] into [[0,2], [14,17], [3,6], [-4,-1], [7,9], [11,12]]
+[INFO ] 2020-11-12 10:22:54.413 [main] ProfessorMergeAnIntervalTest vanillaTest - result of merge: [[-4,-1], [0,9], [11,12], [14,17]]
+Execution Failure : java.lang.AssertionError: 
+Expected: iterable with items [<[-4,-1]>, <[11,12]>, <[14,17]>, <[0,9]>] in any order
+     but: not matched: <[-4,-1]>
+Execution Finished : vanillaTest
+Execution Started : okForRightToOnlyBeGreaterThanLeftByOne
+Execution Finished : okForRightToOnlyBeGreaterThanLeftByOne
+Execution Started : overlappingIntervalsAreMerged
+[INFO ] 2020-11-12 10:22:54.419 [main] ProfessorMergeAnIntervalTest overlappingIntervalsAreMerged - merging [0,2] into [[1,4]]
+[INFO ] 2020-11-12 10:22:54.420 [main] ProfessorMergeAnIntervalTest overlappingIntervalsAreMerged - result of merge: [[0,4]]
+Execution Failure : java.lang.AssertionError: 
+Expected: iterable with items [<[0,4]>] in any order
+     but: not matched: <[0,4]>
+Execution Finished : overlappingIntervalsAreMerged
+Execution Started : performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput
+Execution Failure : java.lang.AssertionError: 
+Expected: iterable with items [<[-2147483648,-2147483647]>, <[2147483646,2147483647]>, <[0,2]>, <[3,5]>, <[6,8]>, <[9,11]>, <[12,14]>, <[15,17]>, <[18,20]>, <[21,23]>, <[24,26]>, <[27,29]>, <[30,32]>, <[33,35]>, <[36,38]>, <[39,41]>, <[42,44]>, <[45,47]>, <[48,50]>, <[51,53]>, <[54,56]>, <[57,59]>, <[60,62]>, <[63,65]>, <[66,68]>, <[69,71]>, <[72,74]>, <[75,77]>, <[78,80]>, <[81,83]>, <[84,86]>, <[87,89]>, <[90,92]>, <[93,95]>, <[96,98]>, <[99,101]>, <[102,104]>, <[105,107]>, <[108,110]>, <[111,113]>, <[114,116]>, <[117,119]>, <[120,122]>, <[123,125]>, <[126,128]>, <[129,131]>, <[132,134]>, <[135,137]>, <[138,140]>, <[141,143]>, <[144,146]>, <[147,149]>, <[150,152]>, <[153,155]>, <[156,158]>, <[159,161]>, <[162,164]>, <[165,167]>, <[168,170]>, <[171,173]>, <[174,176]>, <[177,179]>, <[180,182]>, <[183,185]>, <[186,188]>, <[189,191]>, <[192,194]>, <[195,197]>, <[198,200]>, <[201,203]>, <[204,206]>, <[207,209]>, <[210,212]>, <[213,215]>, <[216,218]>, <[219,221]>, <[222,224]>, <[225,227]>, <[228,230]>, <[231,233]>, <[234,236]>, <[237,239]>, <[240,242]>, <[243,245]>, <[246,248]>, <[249,251]>, <[252,254]>, <[255,257]>, <[258,260]>, <[261,263]>, <[264,266]>, <[267,269]>, <[270,272]>, <[273,275]>, <[276,278]>, <[279,281]>, <[282,284]>, <[285,287]>, <[288,290]>, <[291,293]>, <[294,296]>, <[297,299]>, <[300,302]>, <[303,305]>, <[306,308]>, <[309,311]>, <[312,314]>, <[315,317]>, <[318,320]>, <[321,323]>, <[324,326]>, <[327,329]>, <[330,332]>, <[333,335]>, <[336,338]>, <[339,341]>, <[342,344]>, <[345,347]>, <[348,350]>, <[351,353]>, <[354,356]>, <[357,359]>, <[360,362]>, <[363,365]>, <[366,368]>, <[369,371]>, <[372,374]>, <[375,377]>, <[378,380]>] in any order
+     but: not matched: <[258,260]>
+Execution Finished : performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput
+Execution Started : performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput
+Execution Failure : java.lang.AssertionError: 
+Expected: iterable with items [<[-2147483648,-2147483647]>, <[2147483646,2147483647]>, <[0,128]>] in any order
+     but: not matched: <[0,128]>
+Execution Finished : performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput
+Execution Started : intervalCanHaveNegativeLeftAndRigh
+Execution Finished : intervalCanHaveNegativeLeftAndRigh
+Execution Started : leftCantEqualRight
+Execution Finished : leftCantEqualRight
+Execution Started : disjointIntervalsArentMerged
+[INFO ] 2020-11-12 10:22:54.433 [main] ProfessorMergeAnIntervalTest disjointIntervalsArentMerged - merging [0,2] into [[3,4]]
+[INFO ] 2020-11-12 10:22:54.433 [main] ProfessorMergeAnIntervalTest disjointIntervalsArentMerged - result of merge: [[3,4], [0,2]]
+Execution Failure : java.lang.AssertionError: 
+Expected: iterable with items [<[3,4]>, <[0,2]>] in any order
+     but: not matched: <[3,4]>
+Execution Finished : disjointIntervalsArentMerged
+[ERROR] Tests run: 8, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.334 s <<< FAILURE! - in edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest
+[ERROR] edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.vanillaTest  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: iterable with items [<[-4,-1]>, <[11,12]>, <[14,17]>, <[0,9]>] in any order
+     but: not matched: <[-4,-1]>
+	at edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.vanillaTest(ProfessorMergeAnIntervalTest.java:274)
+
+[ERROR] edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.overlappingIntervalsAreMerged  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: iterable with items [<[0,4]>] in any order
+     but: not matched: <[0,4]>
+	at edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.overlappingIntervalsAreMerged(ProfessorMergeAnIntervalTest.java:252)
+
+[ERROR] edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: iterable with items [<[-2147483648,-2147483647]>, <[2147483646,2147483647]>, <[0,2]>, <[3,5]>, <[6,8]>, <[9,11]>, <[12,14]>, <[15,17]>, <[18,20]>, <[21,23]>, <[24,26]>, <[27,29]>, <[30,32]>, <[33,35]>, <[36,38]>, <[39,41]>, <[42,44]>, <[45,47]>, <[48,50]>, <[51,53]>, <[54,56]>, <[57,59]>, <[60,62]>, <[63,65]>, <[66,68]>, <[69,71]>, <[72,74]>, <[75,77]>, <[78,80]>, <[81,83]>, <[84,86]>, <[87,89]>, <[90,92]>, <[93,95]>, <[96,98]>, <[99,101]>, <[102,104]>, <[105,107]>, <[108,110]>, <[111,113]>, <[114,116]>, <[117,119]>, <[120,122]>, <[123,125]>, <[126,128]>, <[129,131]>, <[132,134]>, <[135,137]>, <[138,140]>, <[141,143]>, <[144,146]>, <[147,149]>, <[150,152]>, <[153,155]>, <[156,158]>, <[159,161]>, <[162,164]>, <[165,167]>, <[168,170]>, <[171,173]>, <[174,176]>, <[177,179]>, <[180,182]>, <[183,185]>, <[186,188]>, <[189,191]>, <[192,194]>, <[195,197]>, <[198,200]>, <[201,203]>, <[204,206]>, <[207,209]>, <[210,212]>, <[213,215]>, <[216,218]>, <[219,221]>, <[222,224]>, <[225,227]>, <[228,230]>, <[231,233]>, <[234,236]>, <[237,239]>, <[240,242]>, <[243,245]>, <[246,248]>, <[249,251]>, <[252,254]>, <[255,257]>, <[258,260]>, <[261,263]>, <[264,266]>, <[267,269]>, <[270,272]>, <[273,275]>, <[276,278]>, <[279,281]>, <[282,284]>, <[285,287]>, <[288,290]>, <[291,293]>, <[294,296]>, <[297,299]>, <[300,302]>, <[303,305]>, <[306,308]>, <[309,311]>, <[312,314]>, <[315,317]>, <[318,320]>, <[321,323]>, <[324,326]>, <[327,329]>, <[330,332]>, <[333,335]>, <[336,338]>, <[339,341]>, <[342,344]>, <[345,347]>, <[348,350]>, <[351,353]>, <[354,356]>, <[357,359]>, <[360,362]>, <[363,365]>, <[366,368]>, <[369,371]>, <[372,374]>, <[375,377]>, <[378,380]>] in any order
+     but: not matched: <[258,260]>
+	at edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput(ProfessorMergeAnIntervalTest.java:93)
+
+[ERROR] edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: iterable with items [<[-2147483648,-2147483647]>, <[2147483646,2147483647]>, <[0,128]>] in any order
+     but: not matched: <[0,128]>
+	at edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput(ProfessorMergeAnIntervalTest.java:194)
+
+[ERROR] edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.disjointIntervalsArentMerged  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: iterable with items [<[3,4]>, <[0,2]>] in any order
+     but: not matched: <[3,4]>
+	at edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.disjointIntervalsArentMerged(ProfessorMergeAnIntervalTest.java:235)
+
+Test cases executed : 8
+[ERROR] Failures: 
+[ERROR]   ProfessorMergeAnIntervalTest.disjointIntervalsArentMerged:235 
+Expected: iterable with items [<[3,4]>, <[0,2]>] in any order
+     but: not matched: <[3,4]>
+[ERROR]   ProfessorMergeAnIntervalTest.overlappingIntervalsAreMerged:252 
+Expected: iterable with items [<[0,4]>] in any order
+     but: not matched: <[0,4]>
+[ERROR]   ProfessorMergeAnIntervalTest.performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput:93 
+Expected: iterable with items [<[-2147483648,-2147483647]>, <[2147483646,2147483647]>, <[0,2]>, <[3,5]>, <[6,8]>, <[9,11]>, <[12,14]>, <[15,17]>, <[18,20]>, <[21,23]>, <[24,26]>, <[27,29]>, <[30,32]>, <[33,35]>, <[36,38]>, <[39,41]>, <[42,44]>, <[45,47]>, <[48,50]>, <[51,53]>, <[54,56]>, <[57,59]>, <[60,62]>, <[63,65]>, <[66,68]>, <[69,71]>, <[72,74]>, <[75,77]>, <[78,80]>, <[81,83]>, <[84,86]>, <[87,89]>, <[90,92]>, <[93,95]>, <[96,98]>, <[99,101]>, <[102,104]>, <[105,107]>, <[108,110]>, <[111,113]>, <[114,116]>, <[117,119]>, <[120,122]>, <[123,125]>, <[126,128]>, <[129,131]>, <[132,134]>, <[135,137]>, <[138,140]>, <[141,143]>, <[144,146]>, <[147,149]>, <[150,152]>, <[153,155]>, <[156,158]>, <[159,161]>, <[162,164]>, <[165,167]>, <[168,170]>, <[171,173]>, <[174,176]>, <[177,179]>, <[180,182]>, <[183,185]>, <[186,188]>, <[189,191]>, <[192,194]>, <[195,197]>, <[198,200]>, <[201,203]>, <[204,206]>, <[207,209]>, <[210,212]>, <[213,215]>, <[216,218]>, <[219,221]>, <[222,224]>, <[225,227]>, <[228,230]>, <[231,233]>, <[234,236]>, <[237,239]>, <[240,242]>, <[243,245]>, <[246,248]>, <[249,251]>, <[252,254]>, <[255,257]>, <[258,260]>, <[261,263]>, <[264,266]>, <[267,269]>, <[270,272]>, <[273,275]>, <[276,278]>, <[279,281]>, <[282,284]>, <[285,287]>, <[288,290]>, <[291,293]>, <[294,296]>, <[297,299]>, <[300,302]>, <[303,305]>, <[306,308]>, <[309,311]>, <[312,314]>, <[315,317]>, <[318,320]>, <[321,323]>, <[324,326]>, <[327,329]>, <[330,332]>, <[333,335]>, <[336,338]>, <[339,341]>, <[342,344]>, <[345,347]>, <[348,350]>, <[351,353]>, <[354,356]>, <[357,359]>, <[360,362]>, <[363,365]>, <[366,368]>, <[369,371]>, <[372,374]>, <[375,377]>, <[378,380]>] in any order
+     but: not matched: <[258,260]>
+[ERROR]   ProfessorMergeAnIntervalTest.performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput:194 
+Expected: iterable with items [<[-2147483648,-2147483647]>, <[2147483646,2147483647]>, <[0,128]>] in any order
+     but: not matched: <[0,128]>
+[ERROR]   ProfessorMergeAnIntervalTest.vanillaTest:274 
+Expected: iterable with items [<[-4,-1]>, <[11,12]>, <[14,17]>, <[0,9]>] in any order
+     but: not matched: <[-4,-1]>
+[ERROR] Tests run: 8, Failures: 5, Errors: 0, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project MergeAnInterval: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/MergeAnInterval/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Problem invoking 'maven test target': aborting this run
+Grade for assignment [CaplanJason]: /10
+Pulled files on Tue Nov 17 08:28:14 EST 2020
+Latest commit of student files ....
+Latest commit of src/main/java/edu/yu/introtoalgs/MergeAnInterval.java was on: Mon Nov 16 17:41:33 2020
+======================================================
+Checking the history of the implementation file
+commit 2c823886ff6c01ab9b087b0a2204a05d23751a89
+Author: jmcaplan <54451212+jmcaplan@users.noreply.github.com>
+Date:   Mon Nov 16 17:41:33 2020 -0500
+
+    Update MergeAnInterval.java
+
+diff --git a/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java b/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
+index d870174..19338ca 100644
+--- a/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
++++ b/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
+@@ -34,6 +34,35 @@ public class MergeAnInterval {
+ 	public String toString() {
+ 		return "[" + left + "," + right + "]";
+ 	}
++	
++	// CODE ADDED AFTER PROFESSOR RACHMANUS EXTENSION ________________________
++	@Override
++	public int hashCode() {
++		final int prime = 31;
++		int result = 1;
++		result = prime * result + left;
++		result = prime * result + right;
++		return result;
++	}
++
++	@Override
++	public boolean equals(Object obj) {
++		if (this == obj)
++			return true;
++		if (obj == null)
++			return false;
++		if (getClass() != obj.getClass())
++			return false;
++		Interval other = (Interval) obj;
++		if (left != other.left)
++			return false;
++		if (right != other.right)
++			return false;
++		return true;
++	}
++	// END CODE ADDED AFTER PROFESSOR RACHMANUS EXTENSION _____________________
++
++	
+   } // Interval class
+ 
+   /** Merges the new interval into an existing set of disjoint intervals.
+
+commit 7ea2dfaf975a4fdbbad154d1dc7526ab97cd050b
+Author: jmcaplan <54451212+jmcaplan@users.noreply.github.com>
+Date:   Thu Nov 5 13:26:21 2020 -0500
+
+    Update MergeAnInterval.java
+
+diff --git a/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java b/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
+index 06e1804..d870174 100644
+--- a/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
++++ b/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
+@@ -48,7 +48,12 @@ public class MergeAnInterval {
+     (final Set<Interval> intervals, Interval toMerge)
+   {
+ 	  if (intervals == null || toMerge == null) throw new IllegalArgumentException("Must pass non-null args");
++	  
+ 	  Set<Interval> result = new HashSet<>();
++	  if (intervals.size() == 0) {
++		  result.add(toMerge);
++		  return result;
++	  }
+ 	  
+ 	  // set up left-edges ordered list and right-edges ordered list
+ 	  List<Integer> leftEdges = new ArrayList<>();
+@@ -69,7 +74,7 @@ public class MergeAnInterval {
+ 	  
+ 	  // find toAddLeft
+ 	  toAddLeft = toMerge.left;
+-	  if (leftBelongsAt < 0 && toAddLeft > leftEdges.get(0)) { // left falls between 2 left-edges
++	  if (leftBelongsAt < 0 && toAddLeft > leftEdges.get(0)) { // left falls between 2 left-edges (it didn't fall on an edge, and isn't smallest edge)
+ 		  // if returns -x, that means it is between list.get(x-2) and list.get(x-1)
+ 		  // to check for overlap, we see if it is <= the RE corresponding to list.get(x-2)
+ 		  indexOfLowerLeftEdge = (-1 * leftBelongsAt) - 2;
+@@ -80,11 +85,10 @@ public class MergeAnInterval {
+ 	  
+ 	  // find toAddRight
+ 	  toAddRight = toMerge.right;
+-	  if (rightBelongsAt < 0 && toAddRight < rightEdges.get(rightEdges.size()-1)) { // right falls between 2 right-edges
++	  if (rightBelongsAt < 0 && toAddRight < rightEdges.get(rightEdges.size()-1)) { // right falls between 2 right-edges (it didn't fall on an edge, and isn't largest edge)
+ 		  // if returns -x, that means it is between list.get(x-2) and list.get(x-1)
+ 		  // to check for overlap, we see if it is >= the LE corresponding to list.get(x-1)
+ 		  indexOfHigherRightEdge = (-1 * rightBelongsAt) - 1;
+-		  System.out.println("indexOfHigherRightEdge: "+indexOfHigherRightEdge);
+ 		  if (toMerge.right >= leftEdges.get(indexOfHigherRightEdge)) {
+ 			  toAddRight = rightEdges.get(indexOfHigherRightEdge);
+ 		  }
+
+commit c11196a1eafee3b12c85a741707a4f9c246144ec
+Author: jmcaplan <54451212+jmcaplan@users.noreply.github.com>
+Date:   Wed Nov 4 20:36:04 2020 -0500
+
+    Create MergeAnInterval.java
+
+diff --git a/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java b/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
+new file mode 100644
+index 0000000..06e1804
+--- /dev/null
++++ b/IntroToAlgorithms/assignments/MergeAnInterval/src/main/java/edu/yu/introtoalgs/MergeAnInterval.java
+@@ -0,0 +1,101 @@
++package edu.yu.introtoalgs;
++
++import java.util.*;
++
++public class MergeAnInterval {
++
++  /** An immutable class, holds a left and right integer-valued pair that
++   * defines a closed interval
++   */
++  public static class Interval implements Comparable<Interval>{
++    public final int left;
++    public final int right;
++
++    /** Constructor
++     * 
++     * @param left the left endpoint of the interval
++     * @param right the right endpoint of the interval
++     */
++    public Interval(int l, int r) {
++      if (l >= r) throw new IllegalArgumentException("left endpoint must be strictly less than right endpoint");
++      this.left = l;
++      this.right = r;
++    }
++
++	@Override
++	public int compareTo(Interval that) {
++		// TODO Auto-generated method stub
++		if (this.left < that.left) return -1;
++		if (this.left > that.left) return 1; 
++		return 0;
++	}
++	
++	@Override
++	public String toString() {
++		return "[" + left + "," + right + "]";
++	}
++  } // Interval class
++
++  /** Merges the new interval into an existing set of disjoint intervals.
++   *
++   * @param intervals the existing set of intervals
++   * @param newInterval the interval to be added
++   * @return a new set of disjoint intervals containing the original intervals
++   * and the new interval, merging the new interval if necessary into existing
++   * interval(s), to preseve the "disjointedness" property.
++   */
++  public static Set<Interval> merge
++    (final Set<Interval> intervals, Interval toMerge)
++  {
++	  if (intervals == null || toMerge == null) throw new IllegalArgumentException("Must pass non-null args");
++	  Set<Interval> result = new HashSet<>();
++	  
++	  // set up left-edges ordered list and right-edges ordered list
++	  List<Integer> leftEdges = new ArrayList<>();
++	  List<Integer> rightEdges = new ArrayList<>();
++	  for (Interval interval: intervals) {
++		  leftEdges.add(interval.left);
++		  rightEdges.add(interval.right);
++	  }
++	  Collections.sort(leftEdges);
++	  Collections.sort(rightEdges);
++	  
++	  int toAddLeft, toAddRight;
++	  
++	  int leftBelongsAt = Collections.binarySearch(leftEdges, toMerge.left);
++	  int rightBelongsAt = Collections.binarySearch(rightEdges, toMerge.right);
++	  int indexOfLowerLeftEdge = leftBelongsAt;
++	  int indexOfHigherRightEdge = rightBelongsAt;
++	  
++	  // find toAddLeft
++	  toAddLeft = toMerge.left;
++	  if (leftBelongsAt < 0 && toAddLeft > leftEdges.get(0)) { // left falls between 2 left-edges
++		  // if returns -x, that means it is between list.get(x-2) and list.get(x-1)
++		  // to check for overlap, we see if it is <= the RE corresponding to list.get(x-2)
++		  indexOfLowerLeftEdge = (-1 * leftBelongsAt) - 2;
++		  if (toMerge.left <= rightEdges.get(indexOfLowerLeftEdge)) {
++			  toAddLeft = leftEdges.get(indexOfLowerLeftEdge);
++		  }
++	  }
++	  
++	  // find toAddRight
++	  toAddRight = toMerge.right;
++	  if (rightBelongsAt < 0 && toAddRight < rightEdges.get(rightEdges.size()-1)) { // right falls between 2 right-edges
++		  // if returns -x, that means it is between list.get(x-2) and list.get(x-1)
++		  // to check for overlap, we see if it is >= the LE corresponding to list.get(x-1)
++		  indexOfHigherRightEdge = (-1 * rightBelongsAt) - 1;
++		  System.out.println("indexOfHigherRightEdge: "+indexOfHigherRightEdge);
++		  if (toMerge.right >= leftEdges.get(indexOfHigherRightEdge)) {
++			  toAddRight = rightEdges.get(indexOfHigherRightEdge);
++		  }
++	  }	  
++	  
++	  for (int i = 0; i < leftEdges.size(); i++) {
++		  if (toAddLeft > leftEdges.get(i) || toAddRight < leftEdges.get(i)) {
++			  result.add(new Interval(leftEdges.get(i), rightEdges.get(i)));
++		  }
++	  }
++	  result.add(new Interval(toAddLeft, toAddRight));
++	  return result;
++  }
++}
+======================================================
+building Student CaplanJason assignment code base from directory /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/MergeAnInterval
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Copying Professor's JUnit source files in /Users/avraham/YUTeaching/IntroToAlgorithms/assignments/MergeAnInterval/src/test to Student CaplanJason directory tree in /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/MergeAnInterval/src
+executing Professor's test code against Student CaplanJason code
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+[ERROR] Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Test cases to execute : 1
+Execution Started : vanillaTest
+[INFO ] 2020-11-17 08:28:18.906 [main] ProfessorMergeAnIntervalTest vanillaTest - merging [1,8] into [[11,12], [0,2], [7,9], [-4,-1], [3,6], [14,17]]
+[INFO ] 2020-11-17 08:28:18.913 [main] ProfessorMergeAnIntervalTest vanillaTest - result of merge: [[11,12], [-4,-1], [14,17], [0,9]]
+Execution Finished : vanillaTest
+Execution Started : okForRightToOnlyBeGreaterThanLeftByOne
+Execution Finished : okForRightToOnlyBeGreaterThanLeftByOne
+Execution Started : overlappingIntervalsAreMerged
+[INFO ] 2020-11-17 08:28:18.918 [main] ProfessorMergeAnIntervalTest overlappingIntervalsAreMerged - merging [0,2] into [[1,4]]
+[INFO ] 2020-11-17 08:28:18.918 [main] ProfessorMergeAnIntervalTest overlappingIntervalsAreMerged - result of merge: [[0,4]]
+Execution Finished : overlappingIntervalsAreMerged
+Execution Started : performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput
+[DEBUG] 2020-11-17 08:28:18.944 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=2048) = 2.0 (current = 2.0, previous = 1.0)
+[DEBUG] 2020-11-17 08:28:18.976 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=4096) = 1.5 (current = 3.0, previous = 2.0)
+[DEBUG] 2020-11-17 08:28:18.994 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=8192) = 1.6666666666666667 (current = 5.0, previous = 3.0)
+[DEBUG] 2020-11-17 08:28:19.045 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=16384) = 2.0 (current = 10.0, previous = 5.0)
+[DEBUG] 2020-11-17 08:28:19.209 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=32768) = 1.5 (current = 15.0, previous = 10.0)
+[DEBUG] 2020-11-17 08:28:19.799 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=65536) = 2.1333333333333333 (current = 32.0, previous = 15.0)
+[DEBUG] 2020-11-17 08:28:22.016 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=131072) = 1.9375 (current = 62.0, previous = 32.0)
+[DEBUG] 2020-11-17 08:28:30.913 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=262144) = 1.935483870967742 (current = 120.0, previous = 62.0)
+Execution Failure : org.junit.runners.model.TestTimedOutException: test timed out after 25000 milliseconds
+Execution Finished : performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput
+Execution Started : performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput
+[DEBUG] 2020-11-17 08:28:43.934 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=8192) = Infinity (current = 2.0, previous = 0.0)
+[DEBUG] 2020-11-17 08:28:43.935 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput - ratio is Infinity (because of divide-by-0), continuing ....
+[DEBUG] 2020-11-17 08:28:43.940 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=16384) = 1.0 (current = 2.0, previous = 2.0)
+[DEBUG] 2020-11-17 08:28:43.949 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=32768) = 2.0 (current = 4.0, previous = 2.0)
+[DEBUG] 2020-11-17 08:28:43.970 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=65536) = 3.0 (current = 12.0, previous = 4.0)
+[DEBUG] 2020-11-17 08:28:44.056 [Time-limited test] ProfessorMergeAnIntervalTest performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput - Doubling-ratio experiment: ratio (n=131072) = 2.0833333333333335 (current = 25.0, previous = 12.0)
+Execution Finished : performanceIsOrderNLogNNonDisjointIntervalsEvenForLargeRangeInInput
+Execution Started : intervalCanHaveNegativeLeftAndRigh
+Execution Finished : intervalCanHaveNegativeLeftAndRigh
+Execution Started : leftCantEqualRight
+Execution Finished : leftCantEqualRight
+Execution Started : disjointIntervalsArentMerged
+[INFO ] 2020-11-17 08:28:44.061 [main] ProfessorMergeAnIntervalTest disjointIntervalsArentMerged - merging [0,2] into [[3,4]]
+[INFO ] 2020-11-17 08:28:44.061 [main] ProfessorMergeAnIntervalTest disjointIntervalsArentMerged - result of merge: [[3,4], [0,2]]
+Execution Finished : disjointIntervalsArentMerged
+[ERROR] Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 25.475 s <<< FAILURE! - in edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest
+[ERROR] edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput  Time elapsed: 25.006 s  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 25000 milliseconds
+	at app//edu.yu.introtoalgs.test.ProfessorMergeAnIntervalTest.performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput(ProfessorMergeAnIntervalTest.java:93)
+
+Test cases executed : 8
+[ERROR] Errors: 
+[ERROR]   ProfessorMergeAnIntervalTest.performanceIsOrderNLogNDisjointIntervalsEvenForLargeRangeInInput:93 » TestTimedOut
+[ERROR] Tests run: 8, Failures: 0, Errors: 1, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project MergeAnInterval: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/MergeAnInterval/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Problem invoking 'maven test target': aborting this run

@@ -1,0 +1,240 @@
+Grade for assignment [CaplanJason]: 8.8/10
+Pulled files on Wed Apr 28 10:03:31 EDT 2021
+Latest commit of student files ....
+Latest commit of src/main/java/edu/yu/da/DPMakingChange.java was on: Thu Apr 22 15:59:30 2021
+building Student CaplanJason assignment code base from directory /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/DPMakingChange
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Copying Professor's JUnit source files in /Users/avraham/YUTeaching/DesignAndAnalysis/assignments/DPMakingChange/src/test to Student CaplanJason directory tree in /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/DPMakingChange/src
+executing Professor's test code against Student CaplanJason code
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+[ERROR] Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Test cases to execute : 1
+Execution Started : determinesThatChangeCantBeMade
+[INFO ] 2021-04-28 10:03:35.862 [main] ProfessorDPMakingChangeTest determinesThatChangeCantBeMade - Making change for 9 cents, using these denominations [0, 2, 4, 6] ...
+[INFO ] 2021-04-28 10:03:35.864 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.864 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 100000, 1, 100000, 2, 100000, 3, 100000, 4, 100000]
+[INFO ] 2021-04-28 10:03:35.864 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 100000, 1, 100000, 1, 100000, 2, 100000, 2, 100000]
+[INFO ] 2021-04-28 10:03:35.864 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 100000, 1, 100000, 1, 100000, 1, 100000, 2, 100000]
+Execution Failure : java.lang.IllegalArgumentException: Cannot make change with input
+Execution Finished : determinesThatChangeCantBeMade
+Execution Started : performanceTestChangeCantBeMade
+[INFO ] 2021-04-28 10:03:35.871 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCantBeMade - n (amount of change to be made): 5
+[INFO ] 2021-04-28 10:03:35.872 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCantBeMade - start@1619618615872
+Execution Failure : java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+Execution Finished : performanceTestChangeCantBeMade
+Execution Started : canMakeChangeForZeroCents
+[INFO ] 2021-04-28 10:03:35.873 [main] ProfessorDPMakingChangeTest canMakeChangeForZeroCents - Making change for 0 cents, using these denominations [0, 1, 2] ...
+Execution Failure : java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+Execution Finished : canMakeChangeForZeroCents
+Execution Started : mustHaveAtLeastOneValidDenomination
+[INFO ] 2021-04-28 10:03:35.874 [main] ProfessorDPMakingChangeTest mustHaveAtLeastOneValidDenomination - Making change for 10 cents, using these denominations [0] ...
+Execution Finished : mustHaveAtLeastOneValidDenomination
+Execution Started : performanceTestChangeCanBeMade
+[INFO ] 2021-04-28 10:03:35.878 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 1024
+[INFO ] 2021-04-28 10:03:35.878 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615878
+[INFO ] 2021-04-28 10:03:35.879 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615879
+At n=1,024, test duration is now ' 0.00' ms, ratio= 0.00
+[INFO ] 2021-04-28 10:03:35.887 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 9
+[INFO ] 2021-04-28 10:03:35.888 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 2048
+[INFO ] 2021-04-28 10:03:35.888 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615888
+[INFO ] 2021-04-28 10:03:35.888 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615888
+At n=2,048, test duration is now ' 0.00' ms, ratio= 0.00
+[INFO ] 2021-04-28 10:03:35.889 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 11
+[INFO ] 2021-04-28 10:03:35.889 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 4096
+[INFO ] 2021-04-28 10:03:35.889 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615889
+[INFO ] 2021-04-28 10:03:35.890 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615890
+At n=4,096, test duration is now ' 0.00' ms, ratio= 0.00
+[INFO ] 2021-04-28 10:03:35.891 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 12
+[INFO ] 2021-04-28 10:03:35.891 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 8192
+[INFO ] 2021-04-28 10:03:35.891 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615891
+[INFO ] 2021-04-28 10:03:35.893 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615893
+At n=8,192, test duration is now ' 1.00' ms, ratio= 0.00
+[INFO ] 2021-04-28 10:03:35.893 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 15
+[INFO ] 2021-04-28 10:03:35.894 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 16384
+[INFO ] 2021-04-28 10:03:35.894 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615894
+[INFO ] 2021-04-28 10:03:35.898 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615898
+At n=16,384, test duration is now ' 4.00' ms, ratio= 3.00
+[INFO ] 2021-04-28 10:03:35.898 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 20
+[INFO ] 2021-04-28 10:03:35.898 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 32768
+[INFO ] 2021-04-28 10:03:35.898 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615898
+[INFO ] 2021-04-28 10:03:35.906 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615906
+At n=32,768, test duration is now '11.00' ms, ratio= 2.33
+[INFO ] 2021-04-28 10:03:35.906 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 28
+[INFO ] 2021-04-28 10:03:35.906 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 65536
+[INFO ] 2021-04-28 10:03:35.907 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615907
+[INFO ] 2021-04-28 10:03:35.921 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615921
+At n=65,536, test duration is now '24.00' ms, ratio= 1.86
+[INFO ] 2021-04-28 10:03:35.921 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 43
+[INFO ] 2021-04-28 10:03:35.921 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 131072
+[INFO ] 2021-04-28 10:03:35.921 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615921
+[INFO ] 2021-04-28 10:03:35.924 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615924
+At n=131,072, test duration is now '26.00' ms, ratio= 0.15
+[INFO ] 2021-04-28 10:03:35.924 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 46
+[INFO ] 2021-04-28 10:03:35.924 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 262144
+[INFO ] 2021-04-28 10:03:35.924 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615924
+[INFO ] 2021-04-28 10:03:35.929 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615929
+At n=262,144, test duration is now '30.00' ms, ratio= 2.00
+[INFO ] 2021-04-28 10:03:35.929 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 51
+[INFO ] 2021-04-28 10:03:35.929 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 524288
+[INFO ] 2021-04-28 10:03:35.930 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615930
+[INFO ] 2021-04-28 10:03:35.938 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615938
+At n=524,288, test duration is now '38.00' ms, ratio= 2.00
+[INFO ] 2021-04-28 10:03:35.938 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - Total test duration in millis (including initialization etc): 60
+[INFO ] 2021-04-28 10:03:35.939 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - n (amount of change to be made): 1048576
+[INFO ] 2021-04-28 10:03:35.939 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - start@1619618615939
+[INFO ] 2021-04-28 10:03:35.955 [Time-limited test] ProfessorDPMakingChangeTest performanceTestChangeCanBeMade - end@1619618615955
+Execution Failure : java.lang.AssertionError: Value of matrix[4][1048576] expected:<131072> but was:<100000>
+Execution Finished : performanceTestChangeCanBeMade
+Execution Started : illegalToSpecifyNegativeChange
+[INFO ] 2021-04-28 10:03:35.956 [main] ProfessorDPMakingChangeTest illegalToSpecifyNegativeChange - Making change for -1 cents, using these denominations [0, 1, 2] ...
+Execution Failure : java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>
+Execution Finished : illegalToSpecifyNegativeChange
+Execution Started : minimalTestDenominationsInAscendingOrder
+[INFO ] 2021-04-28 10:03:35.956 [main] ProfessorDPMakingChangeTest minimalTestDenominationsInAscendingOrder - Making change for 15 cents, using these denominations [0, 1, 7, 10] ...
+[INFO ] 2021-04-28 10:03:35.957 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.957 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+[INFO ] 2021-04-28 10:03:35.957 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7, 2, 3]
+[INFO ] 2021-04-28 10:03:35.957 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 1, 2, 3, 4, 2, 3]
+[INFO ] 2021-04-28 10:03:35.957 [main] ProfessorDPMakingChangeTest minimalTestDenominationsInAscendingOrder - payout is [0, 1, 2, 0]
+[INFO ] 2021-04-28 10:03:35.958 [main] ProfessorDPMakingChangeTest printPayout - Change for 15 cents
+[INFO ] 2021-04-28 10:03:35.958 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 1
+[INFO ] 2021-04-28 10:03:35.958 [main] ProfessorDPMakingChangeTest printPayout - 2 coins of denomination 7
+[INFO ] 2021-04-28 10:03:35.958 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 10
+Execution Finished : minimalTestDenominationsInAscendingOrder
+Execution Started : minimalTestDenominationsInAscendingOrderWithNonZeroAsZerothElement
+[INFO ] 2021-04-28 10:03:35.958 [main] ProfessorDPMakingChangeTest minimalTestDenominationsInAscendingOrderWithNonZeroAsZerothElement - Making change for 15 cents, using these denominations [42, 1, 7, 10] ...
+[INFO ] 2021-04-28 10:03:35.959 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.959 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+[INFO ] 2021-04-28 10:03:35.959 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7, 2, 3]
+[INFO ] 2021-04-28 10:03:35.959 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 1, 2, 3, 4, 2, 3]
+[INFO ] 2021-04-28 10:03:35.959 [main] ProfessorDPMakingChangeTest minimalTestDenominationsInAscendingOrderWithNonZeroAsZerothElement - payout is [0, 1, 2, 0]
+[INFO ] 2021-04-28 10:03:35.959 [main] ProfessorDPMakingChangeTest printPayout - Change for 15 cents
+[INFO ] 2021-04-28 10:03:35.959 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 1
+[INFO ] 2021-04-28 10:03:35.960 [main] ProfessorDPMakingChangeTest printPayout - 2 coins of denomination 7
+[INFO ] 2021-04-28 10:03:35.960 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 10
+Execution Finished : minimalTestDenominationsInAscendingOrderWithNonZeroAsZerothElement
+Execution Started : minimalTest2
+[INFO ] 2021-04-28 10:03:35.960 [main] ProfessorDPMakingChangeTest minimalTest2 - Making change for 9 cents, using these denominations [0, 1, 4, 6] ...
+[INFO ] 2021-04-28 10:03:35.960 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.960 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[INFO ] 2021-04-28 10:03:35.961 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 1, 2, 3, 1, 2, 3, 4, 2, 3]
+[INFO ] 2021-04-28 10:03:35.961 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 1, 2, 3, 1, 2, 1, 2, 2, 3]
+[INFO ] 2021-04-28 10:03:35.961 [main] ProfessorDPMakingChangeTest minimalTest2 - payout is [0, 1, 2, 0]
+[INFO ] 2021-04-28 10:03:35.961 [main] ProfessorDPMakingChangeTest printPayout - Change for 9 cents
+[INFO ] 2021-04-28 10:03:35.961 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 1
+[INFO ] 2021-04-28 10:03:35.961 [main] ProfessorDPMakingChangeTest printPayout - 2 coins of denomination 4
+[INFO ] 2021-04-28 10:03:35.962 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 6
+Execution Finished : minimalTest2
+Execution Started : minimalTest3
+[INFO ] 2021-04-28 10:03:35.962 [main] ProfessorDPMakingChangeTest minimalTest3 - Making change for 30 cents, using these denominations [0, 1, 2, 5, 10, 25] ...
+[INFO ] 2021-04-28 10:03:35.962 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.962 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+[INFO ] 2021-04-28 10:03:35.962 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15]
+[INFO ] 2021-04-28 10:03:35.962 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 1, 1, 2, 2, 1, 2, 2, 3, 3, 2, 3, 3, 4, 4, 3, 4, 4, 5, 5, 4, 5, 5, 6, 6, 5, 6, 6, 7, 7, 6]
+[INFO ] 2021-04-28 10:03:35.963 [main] ProfessorDPMakingChangeTest printDP - Row 4: [0, 1, 1, 2, 2, 1, 2, 2, 3, 3, 1, 2, 2, 3, 3, 2, 3, 3, 4, 4, 2, 3, 3, 4, 4, 3, 4, 4, 5, 5, 3]
+[INFO ] 2021-04-28 10:03:35.963 [main] ProfessorDPMakingChangeTest printDP - Row 5: [0, 1, 1, 2, 2, 1, 2, 2, 3, 3, 1, 2, 2, 3, 3, 2, 3, 3, 4, 4, 2, 3, 3, 4, 4, 1, 2, 2, 3, 3, 2]
+[INFO ] 2021-04-28 10:03:35.963 [main] ProfessorDPMakingChangeTest minimalTest3 - payout is [0, 0, 0, 1, 0, 1]
+[INFO ] 2021-04-28 10:03:35.963 [main] ProfessorDPMakingChangeTest printPayout - Change for 30 cents
+[INFO ] 2021-04-28 10:03:35.963 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 1
+[INFO ] 2021-04-28 10:03:35.963 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 2
+[INFO ] 2021-04-28 10:03:35.964 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 5
+[INFO ] 2021-04-28 10:03:35.964 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 10
+[INFO ] 2021-04-28 10:03:35.964 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 25
+Execution Finished : minimalTest3
+Execution Started : minimalTest4
+[INFO ] 2021-04-28 10:03:35.964 [main] ProfessorDPMakingChangeTest minimalTest4 - Making change for 15 cents, using these denominations [0, 1, 7, 10] ...
+[INFO ] 2021-04-28 10:03:35.964 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.964 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+[INFO ] 2021-04-28 10:03:35.964 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7, 2, 3]
+[INFO ] 2021-04-28 10:03:35.965 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 1, 2, 3, 4, 2, 3]
+[INFO ] 2021-04-28 10:03:35.965 [main] ProfessorDPMakingChangeTest minimalTest4 - payout is [0, 1, 2, 0]
+[INFO ] 2021-04-28 10:03:35.965 [main] ProfessorDPMakingChangeTest printPayout - Change for 15 cents
+[INFO ] 2021-04-28 10:03:35.965 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 1
+[INFO ] 2021-04-28 10:03:35.965 [main] ProfessorDPMakingChangeTest printPayout - 2 coins of denomination 7
+[INFO ] 2021-04-28 10:03:35.965 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 10
+Execution Finished : minimalTest4
+Execution Started : minimalTest5
+[INFO ] 2021-04-28 10:03:35.966 [main] ProfessorDPMakingChangeTest minimalTest5 - Making change for 65 cents, using these denominations [0, 1, 3, 9, 19, 26] ...
+[INFO ] 2021-04-28 10:03:35.966 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.966 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65]
+[INFO ] 2021-04-28 10:03:35.966 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 1, 2, 1, 2, 3, 2, 3, 4, 3, 4, 5, 4, 5, 6, 5, 6, 7, 6, 7, 8, 7, 8, 9, 8, 9, 10, 9, 10, 11, 10, 11, 12, 11, 12, 13, 12, 13, 14, 13, 14, 15, 14, 15, 16, 15, 16, 17, 16, 17, 18, 17, 18, 19, 18, 19, 20, 19, 20, 21, 20, 21, 22, 21, 22, 23]
+[INFO ] 2021-04-28 10:03:35.966 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 1, 2, 1, 2, 3, 2, 3, 4, 1, 2, 3, 2, 3, 4, 3, 4, 5, 2, 3, 4, 3, 4, 5, 4, 5, 6, 3, 4, 5, 4, 5, 6, 5, 6, 7, 4, 5, 6, 5, 6, 7, 6, 7, 8, 5, 6, 7, 6, 7, 8, 7, 8, 9, 6, 7, 8, 7, 8, 9, 8, 9, 10, 7, 8, 9]
+[INFO ] 2021-04-28 10:03:35.966 [main] ProfessorDPMakingChangeTest printDP - Row 4: [0, 1, 2, 1, 2, 3, 2, 3, 4, 1, 2, 3, 2, 3, 4, 3, 4, 5, 2, 1, 2, 3, 2, 3, 4, 3, 4, 3, 2, 3, 4, 3, 4, 5, 4, 5, 4, 3, 2, 3, 4, 3, 4, 5, 4, 5, 4, 3, 4, 5, 4, 5, 6, 5, 6, 5, 4, 3, 4, 5, 4, 5, 6, 5, 6, 5]
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest printDP - Row 5: [0, 1, 2, 1, 2, 3, 2, 3, 4, 1, 2, 3, 2, 3, 4, 3, 4, 5, 2, 1, 2, 3, 2, 3, 4, 3, 1, 2, 2, 2, 3, 3, 3, 4, 4, 2, 3, 3, 2, 3, 4, 3, 4, 5, 3, 2, 3, 3, 3, 4, 4, 4, 2, 3, 3, 3, 4, 3, 4, 5, 4, 3, 4, 4, 3, 4]
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest minimalTest5 - payout is [0, 1, 0, 0, 2, 1]
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest printPayout - Change for 65 cents
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 1
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 3
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 9
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest printPayout - 2 coins of denomination 19
+[INFO ] 2021-04-28 10:03:35.967 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 26
+Execution Finished : minimalTest5
+Execution Started : minimalTestDenominationsInDescendingOrder
+[INFO ] 2021-04-28 10:03:35.968 [main] ProfessorDPMakingChangeTest minimalTestDenominationsInDescendingOrder - Making change for 15 cents, using these denominations [0, 10, 7, 1] ...
+[INFO ] 2021-04-28 10:03:35.968 [main] ProfessorDPMakingChangeTest printDP - Row 0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[INFO ] 2021-04-28 10:03:35.968 [main] ProfessorDPMakingChangeTest printDP - Row 1: [0, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 1, 100000, 100000, 100000, 100000, 100000]
+[INFO ] 2021-04-28 10:03:35.968 [main] ProfessorDPMakingChangeTest printDP - Row 2: [0, 100000, 100000, 100000, 100000, 100000, 100000, 1, 100000, 100000, 1, 100000, 100000, 100000, 2, 100000]
+[INFO ] 2021-04-28 10:03:35.968 [main] ProfessorDPMakingChangeTest printDP - Row 3: [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 1, 2, 3, 4, 2, 3]
+[INFO ] 2021-04-28 10:03:35.969 [main] ProfessorDPMakingChangeTest minimalTestDenominationsInDescendingOrder - payout is [0, 0, 2, 1]
+[INFO ] 2021-04-28 10:03:35.969 [main] ProfessorDPMakingChangeTest printPayout - Change for 15 cents
+[INFO ] 2021-04-28 10:03:35.969 [main] ProfessorDPMakingChangeTest printPayout - 0 coins of denomination 10
+[INFO ] 2021-04-28 10:03:35.969 [main] ProfessorDPMakingChangeTest printPayout - 2 coins of denomination 7
+[INFO ] 2021-04-28 10:03:35.969 [main] ProfessorDPMakingChangeTest printPayout - 1 coins of denomination 1
+Execution Finished : minimalTestDenominationsInDescendingOrder
+[ERROR] Tests run: 13, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 0.466 s <<< FAILURE! - in edu.yu.da.test.ProfessorDPMakingChangeTest
+[ERROR] edu.yu.da.test.ProfessorDPMakingChangeTest.determinesThatChangeCantBeMade  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.IllegalArgumentException: Cannot make change with input
+	at edu.yu.da.test.ProfessorDPMakingChangeTest.determinesThatChangeCantBeMade(ProfessorDPMakingChangeTest.java:83)
+
+[ERROR] edu.yu.da.test.ProfessorDPMakingChangeTest.performanceTestChangeCantBeMade  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at edu.yu.da.test.ProfessorDPMakingChangeTest.performanceTestChangeCantBeMade(ProfessorDPMakingChangeTest.java:288)
+
+[ERROR] edu.yu.da.test.ProfessorDPMakingChangeTest.canMakeChangeForZeroCents  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at edu.yu.da.test.ProfessorDPMakingChangeTest.canMakeChangeForZeroCents(ProfessorDPMakingChangeTest.java:126)
+
+[ERROR] edu.yu.da.test.ProfessorDPMakingChangeTest.performanceTestChangeCanBeMade  Time elapsed: 0.099 s  <<< FAILURE!
+java.lang.AssertionError: Value of matrix[4][1048576] expected:<131072> but was:<100000>
+	at edu.yu.da.test.ProfessorDPMakingChangeTest.performanceTestChangeCanBeMade(ProfessorDPMakingChangeTest.java:379)
+
+[ERROR] edu.yu.da.test.ProfessorDPMakingChangeTest.illegalToSpecifyNegativeChange  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+
+Test cases executed : 13
+[ERROR] Failures: 
+[ERROR]   ProfessorDPMakingChangeTest.performanceTestChangeCanBeMade:379 Value of matrix[4][1048576] expected:<131072> but was:<100000>
+[ERROR] Errors: 
+[ERROR]   ProfessorDPMakingChangeTest.canMakeChangeForZeroCents:126 » ArrayIndexOutOfBounds
+[ERROR]   ProfessorDPMakingChangeTest.determinesThatChangeCantBeMade:83 » IllegalArgument
+[ERROR]   ProfessorDPMakingChangeTest.illegalToSpecifyNegativeChange »  Unexpected excep...
+[ERROR]   ProfessorDPMakingChangeTest.performanceTestChangeCantBeMade:288 » ArrayIndexOutOfBounds
+[ERROR] Tests run: 13, Failures: 1, Errors: 4, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project DPMakingChange: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/DPMakingChange/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Problem invoking 'maven test target': aborting this run
+1. (25%): An explanation of the dynamic programming approach that you’re using to solve the “make change” problem. The explanation should be detailed enough to motivate the optimal recurrence that you’ll supply in the next step.
+
+2. (25%): Deﬁne your notation in terms of your previous explanation and supply a fully-speciﬁed recurrence that solves the problem.
+
+>> excellent work on the writeup
+
+
+3. (10%): A brief explanation of your “payout” algorithm and the “Big-O” space and computation requirements.
+
+The remaining 40% of the grade for this assignment is based on the programming portion of this assignment (below).
+
+re: performanceTestChangeCanBeMade(), per Piazza discussion, I'll
+allow the interpretation of "change to be made can't exceed
+PSEUDO_INFINITY"
+-1.2: 4 cases, program doesn't seem to be able handle non-happy-path scenarios, throwing ArrayIndexOutOfBounds 

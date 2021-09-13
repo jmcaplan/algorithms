@@ -1,0 +1,163 @@
+Grade for assignment [CaplanJason]: 9.7/10
+Pulled files on Fri Apr  9 12:15:44 EDT 2021
+
+very good writeup!
+
+-0.3 edge case errors
+
+Latest commit of student files ....
+Latest commit of src/main/java/edu/yu/da/MaxRectangle.java was on: Tue Mar 23 10:20:15 2021
+building Student CaplanJason assignment code base from directory /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/MaxRectangle
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Copying Professor's JUnit source files in /Users/avraham/YUTeaching/DesignAndAnalysis/assignments/MaxRectangle/src/test to Student CaplanJason directory tree in /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/MaxRectangle/src
+executing Professor's test code against Student CaplanJason code
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+[ERROR] Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Test cases to execute : 1
+Execution Started : smallNonTrivialTestUnevenHeights
+Execution Finished : smallNonTrivialTestUnevenHeights
+Execution Started : testInner
+[INFO ] 2021-04-09 12:15:48.947 [main] ProfessorMaxRectangleTest testInner - Input array is [1, 9, 9, 1]
+Execution Finished : testInner
+Execution Started : testOuter
+[INFO ] 2021-04-09 12:15:48.949 [main] ProfessorMaxRectangleTest testOuter - Input array is [1, 3, 3, 1]
+Execution Finished : testOuter
+Execution Started : inputMustContainAtLeast2Elements
+Execution Failure : java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>
+Execution Finished : inputMustContainAtLeast2Elements
+Execution Started : performanceTest
+[INFO ] 2021-04-09 12:15:48.954 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 20480
+[INFO ] 2021-04-09 12:15:48.956 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984948956
+[INFO ] 2021-04-09 12:15:48.957 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984948957
+At n=20,480, test duration is now ' 0.00' ms, ratio= 0.00
+[INFO ] 2021-04-09 12:15:48.959 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 5
+[INFO ] 2021-04-09 12:15:48.959 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 40960
+[INFO ] 2021-04-09 12:15:48.960 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984948960
+[INFO ] 2021-04-09 12:15:48.962 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984948962
+At n=40,960, test duration is now ' 1.00' ms, ratio= 0.00
+[INFO ] 2021-04-09 12:15:48.962 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 8
+[INFO ] 2021-04-09 12:15:48.962 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 81920
+[INFO ] 2021-04-09 12:15:48.963 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984948963
+[INFO ] 2021-04-09 12:15:48.966 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984948966
+At n=81,920, test duration is now ' 3.00' ms, ratio= 2.00
+[INFO ] 2021-04-09 12:15:48.967 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 13
+[INFO ] 2021-04-09 12:15:48.967 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 163840
+[INFO ] 2021-04-09 12:15:48.968 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984948968
+[INFO ] 2021-04-09 12:15:48.974 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984948974
+At n=163,840, test duration is now ' 8.00' ms, ratio= 2.50
+[INFO ] 2021-04-09 12:15:48.975 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 21
+[INFO ] 2021-04-09 12:15:48.975 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 327680
+[INFO ] 2021-04-09 12:15:48.977 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984948977
+[INFO ] 2021-04-09 12:15:48.989 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984948989
+At n=327,680, test duration is now '19.00' ms, ratio= 2.20
+[INFO ] 2021-04-09 12:15:48.989 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 35
+[INFO ] 2021-04-09 12:15:48.990 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 655360
+[INFO ] 2021-04-09 12:15:48.994 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984948994
+[INFO ] 2021-04-09 12:15:49.016 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949016
+At n=655,360, test duration is now '41.00' ms, ratio= 2.00
+[INFO ] 2021-04-09 12:15:49.017 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 63
+[INFO ] 2021-04-09 12:15:49.019 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 1310720
+[INFO ] 2021-04-09 12:15:49.020 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949020
+[INFO ] 2021-04-09 12:15:49.022 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949022
+At n=1,310,720, test duration is now '43.00' ms, ratio= 0.09
+[INFO ] 2021-04-09 12:15:49.023 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 69
+[INFO ] 2021-04-09 12:15:49.027 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 2621440
+[INFO ] 2021-04-09 12:15:49.028 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949028
+[INFO ] 2021-04-09 12:15:49.033 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949033
+At n=2,621,440, test duration is now '47.00' ms, ratio= 2.00
+[INFO ] 2021-04-09 12:15:49.033 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 79
+[INFO ] 2021-04-09 12:15:49.041 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 5242880
+[INFO ] 2021-04-09 12:15:49.042 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949042
+[INFO ] 2021-04-09 12:15:49.051 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949051
+At n=5,242,880, test duration is now '55.00' ms, ratio= 2.00
+[INFO ] 2021-04-09 12:15:49.051 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 97
+[INFO ] 2021-04-09 12:15:49.066 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 10485760
+[INFO ] 2021-04-09 12:15:49.070 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949070
+[INFO ] 2021-04-09 12:15:49.087 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949087
+At n=10,485,760, test duration is now '71.00' ms, ratio= 2.00
+[INFO ] 2021-04-09 12:15:49.087 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 133
+[INFO ] 2021-04-09 12:15:49.117 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 20971520
+[INFO ] 2021-04-09 12:15:49.123 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949123
+[INFO ] 2021-04-09 12:15:49.156 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949156
+At n=20,971,520, test duration is now '103.00' ms, ratio= 2.00
+[INFO ] 2021-04-09 12:15:49.157 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 203
+[INFO ] 2021-04-09 12:15:49.216 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 41943040
+[INFO ] 2021-04-09 12:15:49.228 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949228
+[INFO ] 2021-04-09 12:15:49.296 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949296
+At n=41,943,040, test duration is now '170.00' ms, ratio= 2.09
+[INFO ] 2021-04-09 12:15:49.297 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 343
+[INFO ] 2021-04-09 12:15:49.415 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 83886080
+[INFO ] 2021-04-09 12:15:49.442 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949442
+[INFO ] 2021-04-09 12:15:49.576 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984949576
+At n=83,886,080, test duration is now '303.00' ms, ratio= 1.99
+[INFO ] 2021-04-09 12:15:49.576 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 622
+[INFO ] 2021-04-09 12:15:49.813 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 167772160
+[INFO ] 2021-04-09 12:15:49.861 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984949861
+[INFO ] 2021-04-09 12:15:50.129 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984950129
+At n=167,772,160, test duration is now '570.00' ms, ratio= 2.01
+[INFO ] 2021-04-09 12:15:50.129 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 1,175
+[INFO ] 2021-04-09 12:15:50.185 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 335544320
+[INFO ] 2021-04-09 12:15:50.275 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984950274
+[INFO ] 2021-04-09 12:15:50.803 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984950803
+At n=335,544,320, test duration is now '1,098.00' ms, ratio= 1.98
+[INFO ] 2021-04-09 12:15:50.804 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 1,850
+[INFO ] 2021-04-09 12:15:51.319 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 671088640
+[INFO ] 2021-04-09 12:15:51.503 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984951503
+[INFO ] 2021-04-09 12:15:52.577 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984952577
+At n=671,088,640, test duration is now '2,172.00' ms, ratio= 2.03
+[INFO ] 2021-04-09 12:15:52.578 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 3,624
+[INFO ] 2021-04-09 12:15:54.632 [Time-limited test] ProfessorMaxRectangleTest performanceTest - n (number of coordinates): 1342177280
+[INFO ] 2021-04-09 12:15:55.033 [Time-limited test] ProfessorMaxRectangleTest performanceTest - start@1617984955033
+[INFO ] 2021-04-09 12:15:57.356 [Time-limited test] ProfessorMaxRectangleTest performanceTest - end@1617984957356
+At n=1,342,177,280, test duration is now '4,484.00' ms, ratio= 2.15
+[INFO ] 2021-04-09 12:15:57.356 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration in millis (including initialization etc): 8,402
+[INFO ] 2021-04-09 12:15:57.357 [Time-limited test] ProfessorMaxRectangleTest performanceTest - Total test duration (including initialization) in ms: 8402
+Execution Finished : performanceTest
+Execution Started : smallNonTrivialTest
+Execution Finished : smallNonTrivialTest
+Execution Started : demoTest
+[INFO ] 2021-04-09 12:15:57.364 [main] ProfessorMaxRectangleTest demoTest - Invoking MaxRectangle.get([5, 5, 5, 5])
+[INFO ] 2021-04-09 12:15:57.373 [main] ProfessorMaxRectangleTest demoTest - Correct answer: Answer [max=15, left=0, right=3, height=5]
+Execution Finished : demoTest
+Execution Started : inputCantBeNull
+Execution Failure : java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>
+Execution Finished : inputCantBeNull
+[ERROR] Tests run: 8, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 8.783 s <<< FAILURE! - in edu.yu.da.test.ProfessorMaxRectangleTest
+[ERROR] edu.yu.da.test.ProfessorMaxRectangleTest.inputMustContainAtLeast2Elements  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>
+	at edu.yu.da.test.ProfessorMaxRectangleTest.inputMustContainAtLeast2Elements(ProfessorMaxRectangleTest.java:77)
+
+[ERROR] edu.yu.da.test.ProfessorMaxRectangleTest.inputCantBeNull  Time elapsed: 0 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NullPointerException>
+	at edu.yu.da.test.ProfessorMaxRectangleTest.inputCantBeNull(ProfessorMaxRectangleTest.java:70)
+
+Test cases executed : 8
+[ERROR] Errors: 
+[ERROR]   ProfessorMaxRectangleTest.inputCantBeNull »  Unexpected exception, expected<ja...
+[ERROR]   ProfessorMaxRectangleTest.inputMustContainAtLeast2Elements »  Unexpected excep...
+[ERROR] Tests run: 8, Failures: 0, Errors: 2, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project MaxRectangle: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/MaxRectangle/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Problem invoking 'maven test target': aborting this run
+Your writeup must contain in this order:
+
+1. (5%): One paragraph describing a “brute force” solution and its Big-O performance.
+
+2. (10%): One paragraph describing your algorithm’s “core” greedy heuristic.
+
+3. (20%): Pseudo-code for a greedy algorithm that solves this problem in O(n) time (n is the number of (x, y) coordinates).
+
+4. (15%): Proof of optimality.
+
+Programming Work
+
+This part of the assignment is worth (50%).

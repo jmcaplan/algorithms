@@ -1,0 +1,140 @@
+Grade for assignment [CaplanJason]: 10/10
+
+very good work, i liked the case analysis, and the annotated pseudo-code!
+
+possibly just "my taste", but i thought the proof could have been streamlined (not sure if you needed the lemmas at all, but that could have been refactored into an appendix so as not to detract from the main flow of the proof).
+
+
+late pass:
+
+Pulled files on Sat Feb 27 19:42:54 EST 2021
+Latest commit of student files ....
+Latest commit of src/main/java/edu/yu/da/SimplerVirusChecker.java was on: Thu Feb 25 09:12:16 2021
+Latest commit of src/main/java/edu/yu/da/CanonicalVirus.java was on: Thu Feb 18 12:55:45 2021
+Latest commit of src/main/java/edu/yu/da/ComputerVirusDetection.java was on: Thu Feb 25 12:56:33 2021
+Latest commit of src/main/java/edu/yu/da/SimpleVirusChecker.java was on: Thu Feb 18 15:31:29 2021
+building Student CaplanJason assignment code base from directory /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/ComputerVirusDetection
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Copying Professor's JUnit source files in /Users/avraham/YUTeaching/DesignAndAnalysis/assignments/ComputerVirusDetection/src/test to Student CaplanJason directory tree in /Users/avraham/YUGitRepos/2546/CaplanJason/DesignAndAnalysis/assignments/ComputerVirusDetection/src
+executing Professor's test code against Student CaplanJason code
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+[ERROR] Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Test cases to execute : 1
+Execution Started : mostPrevalentExistsMoreRandom
+[INFO ] 2021-02-27 19:42:59.557 [main] ProfessorComputerVirusDetectionTest mostPrevalentExistsMoreRandom - Looking for most prevalent virus in [Virus[code=3], Virus[code=3], Virus[code=4], Virus[code=2], Virus[code=4], Virus[code=4], Virus[code=2], Virus[code=4], Virus[code=4]]
+[INFO ] 2021-02-27 19:42:59.565 [main] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=4] at index
+Execution Finished : mostPrevalentExistsMoreRandom
+Execution Started : mostPrevalentExistsHeteroEvenInput
+[INFO ] 2021-02-27 19:42:59.566 [main] ProfessorComputerVirusDetectionTest mostPrevalentExistsHeteroEvenInput - Looking for most prevalent virus in [Virus[code=1], Virus[code=1], Virus[code=0], Virus[code=1]]
+[INFO ] 2021-02-27 19:42:59.567 [main] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+Execution Finished : mostPrevalentExistsHeteroEvenInput
+Execution Started : mostPrevalentExistsHeteroOddInput
+[INFO ] 2021-02-27 19:42:59.568 [main] ProfessorComputerVirusDetectionTest mostPrevalentExistsHeteroOddInput - Looking for most prevalent virus in [Virus[code=1], Virus[code=1], Virus[code=0]]
+[INFO ] 2021-02-27 19:42:59.568 [main] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+Execution Finished : mostPrevalentExistsHeteroOddInput
+Execution Started : codeEqualVirusesHashToDifferentValues
+Execution Finished : codeEqualVirusesHashToDifferentValues
+Execution Started : mostPrevalentDoesntExistHeteroOddInput
+[INFO ] 2021-02-27 19:42:59.569 [main] ProfessorComputerVirusDetectionTest mostPrevalentDoesntExistHeteroOddInput - Looking for most prevalent virus in [Virus[code=1], Virus[code=1], Virus[code=0], Virus[code=2], Virus[code=3]]
+Execution Finished : mostPrevalentDoesntExistHeteroOddInput
+Execution Started : performanceTest
+[INFO ] 2021-02-27 19:42:59.576 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979576
+[INFO ] 2021-02-27 19:42:59.580 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:42:59.580 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472979580
+At n=20,480, test duration is now ' 3.00' ms, ratio=Infinity
+[INFO ] 2021-02-27 19:42:59.581 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 8
+[INFO ] 2021-02-27 19:42:59.586 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979586
+[INFO ] 2021-02-27 19:42:59.590 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:42:59.590 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472979590
+At n=40,960, test duration is now ' 6.00' ms, ratio= 1.00
+[INFO ] 2021-02-27 19:42:59.591 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 18
+[INFO ] 2021-02-27 19:42:59.597 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979597
+[INFO ] 2021-02-27 19:42:59.604 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:42:59.604 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472979604
+At n=81,920, test duration is now '12.00' ms, ratio= 2.00
+[INFO ] 2021-02-27 19:42:59.605 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 32
+[INFO ] 2021-02-27 19:42:59.618 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979618
+[INFO ] 2021-02-27 19:42:59.631 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:42:59.631 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472979631
+At n=163,840, test duration is now '24.00' ms, ratio= 2.00
+[INFO ] 2021-02-27 19:42:59.631 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 58
+[INFO ] 2021-02-27 19:42:59.657 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979657
+[INFO ] 2021-02-27 19:42:59.672 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:42:59.672 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472979672
+At n=327,680, test duration is now '38.00' ms, ratio= 1.17
+[INFO ] 2021-02-27 19:42:59.672 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 99
+[INFO ] 2021-02-27 19:42:59.697 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979697
+[INFO ] 2021-02-27 19:42:59.722 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:42:59.722 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472979722
+At n=655,360, test duration is now '62.00' ms, ratio= 1.71
+[INFO ] 2021-02-27 19:42:59.723 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 150
+[INFO ] 2021-02-27 19:42:59.820 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979820
+[INFO ] 2021-02-27 19:42:59.862 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:42:59.862 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472979862
+At n=1,310,720, test duration is now '103.00' ms, ratio= 1.71
+[INFO ] 2021-02-27 19:42:59.862 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 289
+[INFO ] 2021-02-27 19:42:59.993 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472979993
+[INFO ] 2021-02-27 19:43:00.077 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:43:00.077 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472980077
+At n=2,621,440, test duration is now '186.00' ms, ratio= 2.02
+[INFO ] 2021-02-27 19:43:00.077 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 504
+[INFO ] 2021-02-27 19:43:00.297 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472980297
+[INFO ] 2021-02-27 19:43:00.571 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:43:00.571 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472980571
+At n=5,242,880, test duration is now '459.00' ms, ratio= 3.29
+[INFO ] 2021-02-27 19:43:00.571 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 998
+[INFO ] 2021-02-27 19:43:01.117 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472981117
+[INFO ] 2021-02-27 19:43:01.534 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:43:01.534 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472981534
+At n=10,485,760, test duration is now '875.00' ms, ratio= 1.52
+[INFO ] 2021-02-27 19:43:01.534 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 1,961
+[INFO ] 2021-02-27 19:43:02.606 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - start@1614472982606
+[INFO ] 2021-02-27 19:43:03.371 [Time-limited test] ProfessorComputerVirusDetectionTest assertValid - Most prevalent virus: Virus[code=1] at index
+[INFO ] 2021-02-27 19:43:03.371 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - end@1614472983371
+At n=20,971,520, test duration is now '1,639.00' ms, ratio= 1.84
+[INFO ] 2021-02-27 19:43:03.371 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration in millis (including initialization etc): 3,798
+[INFO ] 2021-02-27 19:43:03.371 [Time-limited test] ProfessorComputerVirusDetectionTest performanceTest - Total test duration (including initialization) in ms: 3798
+Execution Finished : performanceTest
+Execution Started : mostPrevalentDoesntExistHeteroInputEvenSplit
+[INFO ] 2021-02-27 19:43:03.373 [main] ProfessorComputerVirusDetectionTest mostPrevalentDoesntExistHeteroInputEvenSplit - Looking for most prevalent virus in [Virus[code=2], Virus[code=1], Virus[code=1], Virus[code=2], Virus[code=2], Virus[code=1]]
+Execution Finished : mostPrevalentDoesntExistHeteroInputEvenSplit
+Execution Started : mostPrevalentDoesntExistHeteroEvenInput
+[INFO ] 2021-02-27 19:43:03.374 [main] ProfessorComputerVirusDetectionTest mostPrevalentDoesntExistHeteroEvenInput - Looking for most prevalent virus in [Virus[code=1], Virus[code=1], Virus[code=0], Virus[code=2]]
+Execution Finished : mostPrevalentDoesntExistHeteroEvenInput
+Execution Started : checkerDeterminesVirusEquality
+Execution Finished : checkerDeterminesVirusEquality
+Test cases executed : 9
+
+>> np
+
+1. (5%) A two-sentence description (including claimed performance!) of
+a brute-force algorithm that performs worse than your own
+algorithm. Don’t pick a 2^n algorithm as your contrast algorithm: it
+should be a plausible algorithm for solving this problem.
+
+2. (15%): A paragraph or three describing the core idea in your
+algorithm: how will your algorithm solve the problem?
+
+3. (45%): A pseudo-code description of your algorithm in terms of the
+problem deﬁnition.
+
+• As discussed in lecture: your description should neither be
+  expressed as (low-level) code (that’s the programming part) nor
+  expressed as (high-level) English (that’s the job of your ﬁrst two
+  paragraphs!).
+
+• You must describe the algorithm “crisply” and in terms that enable
+  you to specify a recurrence relation for Q(n). The recurrence must
+  use precise notation that matches your algorithm description.
+
+• Solve your recurrence relation (using any technique discussed in
+  class) to provide a “Big-O” measurement of your algorithm.
+
+Supply a proof that your algorithm is correct: more speciﬁcally, that
+the eventual answer is in fact represents “most prevalent” virus
+equivalence class.
+
+• A sketch of how your implementation conforms to the pseudocode.>
+
+The remaining 35% of the grade for this assignment is based on the
+programming portion of this assignment

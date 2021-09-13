@@ -1,0 +1,66 @@
+Grade for assignment [CaplanJason]: 10/10
+
+very good work!
+
+Pulled files on Tue Nov 17 10:16:52 EST 2020
+Latest commit of student files ....
+Latest commit of src/main/java/edu/yu/introtoalgs/IntegerLRUCache.java was on: Mon Nov 16 23:30:46 2020
+building Student CaplanJason assignment code base from directory /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/IntegerLRUCache
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Copying Professor's JUnit source files in /Users/avraham/YUTeaching/IntroToAlgorithms/assignments/IntegerLRUCache/src/test to Student CaplanJason directory tree in /Users/avraham/YUGitRepos/2545/CaplanJason/IntroToAlgorithms/assignments/IntegerLRUCache/src
+executing Professor's test code against Student CaplanJason code
+Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+[ERROR] Picked up JAVA_TOOL_OPTIONS: -Xms4096m -Xmx15G -XX:MaxMetaspaceSize=1G
+Test cases to execute : 1
+Execution Started : putKeyCantBeNull
+Execution Finished : putKeyCantBeNull
+Execution Started : putWhenPresent
+Execution Finished : putWhenPresent
+Execution Started : getWhenPresent
+Execution Finished : getWhenPresent
+Execution Started : putWhenAbsent
+Execution Finished : putWhenAbsent
+Execution Started : removeValueCantBeNull
+Execution Finished : removeValueCantBeNull
+Execution Started : getWhenAbsent
+Execution Finished : getWhenAbsent
+Execution Started : getKeyCantBeNull
+Execution Finished : getKeyCantBeNull
+Execution Started : putGetRemoveIsConstantWhenBelowCapacity
+[DEBUG] 2020-11-17 10:16:56.467 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=128) = Infinity
+[DEBUG] 2020-11-17 10:16:56.474 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=2048) = 2.0
+[DEBUG] 2020-11-17 10:16:56.479 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=4096) = 2.0
+[DEBUG] 2020-11-17 10:16:56.487 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=8192) = 1.75
+[DEBUG] 2020-11-17 10:16:56.499 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=16384) = 1.5714285714285714
+[DEBUG] 2020-11-17 10:16:56.519 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=32768) = 1.8181818181818181
+[DEBUG] 2020-11-17 10:16:56.551 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=65536) = 1.5
+[DEBUG] 2020-11-17 10:16:56.599 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=131072) = 1.6
+[DEBUG] 2020-11-17 10:16:56.670 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=262144) = 1.4583333333333333
+[DEBUG] 2020-11-17 10:16:56.764 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=524288) = 1.3285714285714285
+[DEBUG] 2020-11-17 10:16:57.037 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=1048576) = 2.935483870967742
+[DEBUG] 2020-11-17 10:16:57.621 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=2097152) = 2.1355311355311355
+[DEBUG] 2020-11-17 10:16:58.719 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=4194304) = 1.881646655231561
+[DEBUG] 2020-11-17 10:17:01.089 [Time-limited test] ProfessorIntegerLRUCacheTest putGetRemoveIsConstantWhenBelowCapacity - ratio (n=8388608) = 2.1595259799453053
+Execution Finished : putGetRemoveIsConstantWhenBelowCapacity
+Execution Started : removeWhenAbsent
+Execution Finished : removeWhenAbsent
+Execution Started : LRUTest
+Execution Finished : LRUTest
+Execution Started : removeKeyCantBeNull
+Execution Finished : removeKeyCantBeNull
+Execution Started : putGetIsConstantWhenAboveCapacity
+[DEBUG] 2020-11-17 10:17:01.103 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=8192) = 3.0
+[DEBUG] 2020-11-17 10:17:01.110 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=16384) = 2.0
+[DEBUG] 2020-11-17 10:17:01.120 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=32768) = 1.6666666666666667
+[DEBUG] 2020-11-17 10:17:01.139 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=65536) = 1.8
+[DEBUG] 2020-11-17 10:17:01.167 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=131072) = 1.5
+[DEBUG] 2020-11-17 10:17:01.229 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=262144) = 2.259259259259259
+[DEBUG] 2020-11-17 10:17:01.309 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=524288) = 1.3114754098360655
+[DEBUG] 2020-11-17 10:17:01.521 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=1048576) = 2.6375
+[DEBUG] 2020-11-17 10:17:01.924 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=2097152) = 1.90521327014218
+[DEBUG] 2020-11-17 10:17:02.529 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=4194304) = 1.5049751243781095
+[DEBUG] 2020-11-17 10:17:04.302 [Time-limited test] ProfessorIntegerLRUCacheTest putGetIsConstantWhenAboveCapacity - ratio (n=8388608) = 2.9289256198347107
+Execution Finished : putGetIsConstantWhenAboveCapacity
+Execution Started : removeWhenPresent
+Execution Finished : removeWhenPresent
+Test cases executed : 13

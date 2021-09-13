@@ -1,0 +1,76 @@
+Assignment NFApps1 [CaplanJason]: 8/10
+Pulled files on Tue May 11 17:05:05 EDT 2021
+Latest commit of student files ....
+Latest commit of DesignAndAnalysis/assignments/NFApps1/NFApps1.pdf was on: Wed May 5 15:18:00 2021
+1. (20%: Show that this problem can be reduced to a network-ﬂow
+problem. To be convincing, you should use the approach(s) presented in
+lecture and the textbook, introducing precise notation as
+necessary. I’ve already deﬁned m, n, p: only add notation if
+necessary.
+
+
+2. (10%): Draw the ﬂow network that you would construct in order to
+solve the above “example” (with 6 students and 3 chaburos). Write
+several sentences that show how you use the reduction from the
+previous part to construct the graph.
+
+Your graph must clearly show: labeling of the source and destination
+vertices; all edges & vertices; and edge capacities.
+
+3. (10%): Describe precisely how we can use your solution above to
+determine whether, in fact, an assignment does exist in which each
+student gets one of their top two choices? Speciﬁcally: what
+characteristic of the network-ﬂow “reports” whether or not an
+assignment can be made.
+
+
+4. (10%): As a function of m (number of chaburos), n (number of
+students), and p (number of slots per chaburo) in the worst case,
+howmany augmenting paths will Ford–Fulkerson algorithm ﬁnd? You may
+assume that n ≥ m.
+
+
+5. (10%): Now we modify the original problem somewhat. Let k be an
+integer between 1 and m, and we want to know whether it’s possible to
+assign students ⇔ chaburos such that each student gets one of their
+top k choices. Brieﬂy describe how you could easily modify your
+solution to part (a) to solve this modiﬁed problem.
+
+
+6. (40%): Design an “eﬃcient” algorithm that ﬁnds the smallest integer
+k for which it is possible to assign students ⇔ chaburos such that
+each student gets one of their top k choices.
+
+Your algorithm must be substantially faster in the worst case than
+repeatedly applying your solution to the previous “modiﬁed top k”
+problem to solve m maximum ﬂow problems.
+
+
+-2: I don't see how this produces a "correct" solution.  We're looking for
+an algorithm that "ﬁnds the smallest integer k for which it is
+possible to assign students ⇔ chaburos such that each student gets one
+of their top k choices."  Per the discussion below, we may well
+overlook opportunities for a valid solution simply because we're
+looking at "prioritized preferred choices" when giving a student e.g.,
+his worst-choice might allow for a valid solution overall.  A classic
+NF approach (implicitly) takes this into account because the algorithm
+will backtrack as necessary.  I don't see how the alg below will do
+this.
+ 
+
+"We use the same general idea as above, but we populate the network
+flow graph such that there are edges from each student to every single
+chabura on his preference list. Also, instead of using vanilla BFS or
+DFS to find augmenting paths, we prioritize preferred choices, by
+essentially going through the input array of student preferences
+column-wise first (i.e., we first add paths that contain each
+student’s top choice, then the paths that contain each student’s
+second choice, and so on). We keep a counter 𝑐 that is initialized to
+zero and is incremented each time we successfully find an augmenting
+path. We break once the flow reaches 𝑚𝑎𝑥 𝑓 𝑙𝑜𝑤, i.e. when 𝑐 == 𝑛, and
+return the number of the column we are up to in our scan of the input
+array (1-indexed), because this number represents the lowest ranking
+we had to allow in order to find a suitable arrangement (e.g., in the
+example input given, if we just added the path going through 𝐵 and 𝑋
+when we reached the exit condition, we are in the second column of the
+input array, so the answer would be 𝑘 = 2)."
